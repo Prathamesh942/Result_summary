@@ -23,7 +23,7 @@ Users will be able to:
 - See hover and focus states for all interactive elements on the page
 
 ### Links
-- Live Site URL: result-summary-pewl.vercel.app/
+- Live Site URL: [result-summary-pewl.vercel.app/](https://result-summary-pewl.vercel.app/)
 
 ### Built with
 
