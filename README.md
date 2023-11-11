@@ -22,9 +22,6 @@ Users will be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshots
-![Alt Text](results-summary-component-main/image-1.png)
-
 ### Links
 - Live Site URL: [result-summary-pewl.vercel.app/](https://result-summary-pewl.vercel.app/)
 
