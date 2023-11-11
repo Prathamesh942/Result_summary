@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    max-width: 600px;
+    height: 450px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
+}
+
+.score{
+    display: flex;
+    width: 80%;
+    max-width: 160px;
+    min-width: 100px;
+    min-height: 100px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.result{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.summary{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#summary{
+    font-weight: 600;
+    display: flex;
+    width: 100%;
+}
+
+.remark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.remark > :nth-child(2){
+    font-weight: 200;
+    font-size: 15px;
+}
+
+
+#left{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    min-width: 100px;
+    border-radius: 20px;
+    padding: 40px 30px;
+    color: white;
+}
+
+#right{
+    padding: 40px 30px;
+    font-weight: 800;
+}
+
+
+.parameters{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    width: 100%;
+}
+
+.parameter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 5px;
+}
+
+.parname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+button{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    color: white;
+    background-color:  hsl(224, 30%, 27%);
+    cursor: pointer;
+}
+
+#reaction > :first-child{
+    color: hsl(0, 100%, 67%);
+}
+#memory > :first-child{
+    color: hsl(39, 100%, 56%);
+}
+#verbal > :first-child{
+    color:  hsl(166, 100%, 37%);
+}
+#visual > :first-child{
+    color:hsl(234, 85%, 45%);
+}
+#reaction{
+    background-color: hsl(0, 100%, 95%);
+}
+#memory{
+    background-color: hsl(39, 100%, 90%);
+}
+#verbal{
+    background-color:  hsl(166, 100%, 90%);
+}
+#visual{
+    background-color:hsl(234, 85%,90%);
+}
+
+.percent{
+    font-size: medium;
+}
+
+button:active{ 
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media (max-width: 375px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 100vw;
+        height: 100vh;
+    }  
+    .score{
+        border-radius: 50%;
+    }
+    #left{
+        border-radius: 0px 0px 20px 20px;
+    }
+    .attribution{
+        display: none;
+    }  
+    .parameters{
+        gap: 15px;
+    }
+    .parameter{
+        height: 50px;
+        font-weight: bolder;
+    }
+    button{
+        height: 50px;
+        border-radius: 50px;
+        font-size: larger;
+    }
+}
